@@ -1,0 +1,12 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: dev
+
+images:
+  - name: haojiehanglaxregistry.azurecr.io/azvote/azure-vote-front
+    newTag: cf24c7157e7dd2f23743b5f2319048ce2ee1f45a
+  - name: haojiehanglaxregistry.azurecr.io/azvote/azure-vote-back
+    newTag: cf24c7157e7dd2f23743b5f2319048ce2ee1f45a
+resources:
+  - manifests.yaml
