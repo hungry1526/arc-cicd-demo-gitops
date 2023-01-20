@@ -1,4 +1,4 @@
 title: "Voting Application"
 serviceType: ClusterIP
-imageRepo: haojiehanglaxregistry.azurecr.io/azvote
+imageRepo: cloudregistrydemo.azurecr.io/azvote
 demoAppUrl: "/"
