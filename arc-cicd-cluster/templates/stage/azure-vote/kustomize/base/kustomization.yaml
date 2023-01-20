@@ -1,0 +1,12 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: stage
+
+images:
+  - name: cloudregistrydemo.azurecr.io/azvote/azure-vote-front
+    newTag: bde4d138d34c773ce7926a9e96a6bedf59b4d48f
+  - name: cloudregistrydemo.azurecr.io/azvote/azure-vote-back
+    newTag: bde4d138d34c773ce7926a9e96a6bedf59b4d48f
+resources:
+  - manifests.yaml
